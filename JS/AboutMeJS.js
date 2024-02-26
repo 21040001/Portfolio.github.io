@@ -27,7 +27,7 @@
 		  	document.getElementsByClassName("main-div")[0].style.height = h+"px" ;
 		  	document.getElementsByClassName("main-div")[1].style.height = h+"px" ;
 			document.getElementById("contactMe").style.height = h+"px" ;
-			document.getElementById("contactMeFormDiv").style.height = (h/100)*60 +"px";
+			
 			document.getElementById("contactMeFormLeftDiv").style.height = (h/100)*60 - 60 +"px"; 
 			document.getElementById("hrContact").style.height = (h/100)*60 - 60 +"px";
 			document.getElementById("contactMeFormRightDiv").style.height = (h/100)*60 - 60 +"px";
@@ -95,15 +95,31 @@
 	let myVar1028 = setInterval(myTimer1028, 100);
 	function myTimer1028() {
     	var w= window.innerWidth;
-    	console.log(w)
+    	var h = window.innerHeight;
 	    if(w < 1028){
-	  		console.log("Merhaba, Dünya!");
-
-		  	//document.getElementById("portfolioImg").style.display = "none";
+	    	//skils div
 		  	document.getElementById("my-skills-h1").style.paddingTop = "0px";
 		  	document.getElementById("portfolioImg").style.paddingLeft = "110px";
 		  	
+
+		  	//contact Me div
+		  	document.getElementById("contactMeFormLeftDiv").style.float = "none";
+		  	document.getElementById("contactMeFormLeftDiv").style.width = "85%"
+		  	document.getElementById("contactMeFormRightDiv").style.width = "85%"
+		  	document.getElementById("contactMeFormRightDiv").style.paddingTop = "0px"
+		  	document.getElementById("contactMeFormLeftDiv").style.paddingTop = "50px";
+		  	document.getElementById("hrContact").style.display = "none";
+		  	document.getElementById("contactMeFormDiv").style.height = "800px";
 	 	}else{
 	 		document.getElementById("portfolioImg").style.paddingLeft = "";
+
+
+	 		//contact Me div
+	 		document.getElementById("contactMeFormLeftDiv").style.width = "40%"
+	 		document.getElementById("contactMeFormRightDiv").style.width = "40%"
+	 		document.getElementById("contactMeFormDiv").style.height = (h/100)*60 +"px";
+		  	document.getElementById("contactMeFormLeftDiv").style.float = "left";
+		  	document.getElementById("contactMeFormRightDiv").style.paddingTop = "50px"
+		  	document.getElementById("hrContact").style.display = "";
 		  	}
 		}
