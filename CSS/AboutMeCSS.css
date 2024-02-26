@@ -35,14 +35,13 @@ body{
 	position: fixed;
 }
 #icon-img-account{
-	display: flex;
+	/*display: flex;*/
 	float: left;
 	background-color: #202020;
 	height: 300px;
 	width: 300px;
 	box-shadow: 3px 3px 15px grey;
 	border-radius: 15% 15% 15% 15%;
-	/*margin-left: 150px;*/
 	margin-top: 180px;
 }
 
@@ -74,6 +73,8 @@ body{
 	justify-content: center;
 	background-color:#303030bd ;
 	box-shadow:  3px 3px 15px grey;
+	flex-wrap: wrap;
+    align-content: center;
 }
 
 #sosyalMedya{
@@ -100,15 +101,11 @@ body{
 .portfolio-img{
 	height: 300px;
 	width: 350px;
-	padding-top: 180px;
-	padding-left: 150px;
-	padding-bottom: 20px;
 	float: left;
+
 }
 #my-skills-h1{
 	color: #f9532d; 
-	
-	padding-top: 180px;
 	padding-left: 100px;
 }
 

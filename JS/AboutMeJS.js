@@ -88,3 +88,22 @@
 			x.classList.remove("icon-img-account-2");
 		}
 
+
+// Ekran eni 1028pxdan kichik bo'lganda ekrandaki elementlarning joylashishi va o'zgarishi
+
+
+	let myVar1028 = setInterval(myTimer1028, 100);
+	function myTimer1028() {
+    	var w= window.innerWidth;
+    	console.log(w)
+	    if(w < 1028){
+	  		console.log("Merhaba, Dünya!");
+
+		  	//document.getElementById("portfolioImg").style.display = "none";
+		  	document.getElementById("my-skills-h1").style.paddingTop = "0px";
+		  	document.getElementById("portfolioImg").style.paddingLeft = "110px";
+		  	
+	 	}else{
+	 		document.getElementById("portfolioImg").style.paddingLeft = "";
+		  	}
+		}
