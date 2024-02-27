@@ -2,6 +2,7 @@
 body{
 			background-color: #0a0a0aed;
 			margin: 0;
+			font-size: 18px;
 		}
 
 #boshHeader{
@@ -56,6 +57,7 @@ body{
 	background: white; 
 	margin: 20px; 
 	padding: 10px; 
+	row-gap: 8px;
 	border-radius: 10px;
 }
 
@@ -107,6 +109,9 @@ body{
 #my-skills-h1{
 	color: #f9532d; 
 	padding-left: 100px;
+	position: relative;
+	animation-name: MySkillsH1;
+	animation-duration: 3s;
 }
 
 .skills-a-tags{
@@ -119,6 +124,10 @@ body{
 	color: #ff5722;
 	border-radius: 4px;
 }
+.skills-a-tags1{
+	background-color: #2f6028bd;
+}
+
 #btn-dwnld-cv{
 	margin-left: auto;
     margin-right: auto;
@@ -129,6 +138,10 @@ body{
 	color: white;
 	background-color: green;
 }
+.btn-dwnld-cv2{
+	background-color:#564910 !important ;
+}
+
 .yazi-color{
 	color: #f9532d !important; 
 }
@@ -223,4 +236,57 @@ body{
 	 height: 30px;
 	 margin-left: 30px;
 	 margin-top: 10px;
+}
+
+/*Animations*/
+#HiIm{
+	margin: 0;
+	position: relative;
+	animation-name: HAnimations2;
+	animation-duration: 3s;
+}
+#h1DavronbekAbdurazzokov{
+	margin: 0;
+	position: relative;
+	animation-name: HAnimations1;
+	animation-duration: 3s;
+	/*animation-delay: 3s;*/
+}
+.instagramLogo{
+	position: relative;
+	animation-name: LogoAnimation;
+	animation-duration: 3s;
+}
+.linkednLogo{
+	position: relative;
+	animation-name: LogoAnimation;
+	animation-duration: 4s;
+}
+.telegramLogo{
+	position: relative;
+	animation-name: LogoAnimation;
+	animation-duration: 5s;
+}
+.githubLogo{
+	position: relative;
+	animation-name: LogoAnimation;
+	animation-duration: 5.5s;
+	animation-timing-function: linear;
+}
+
+@keyframes HAnimations1 {
+  from {left: -100px;}
+  to {left: 0px;}
+}
+@keyframes HAnimations2 {
+  from {top: -100px;}
+  to {top: 0px;}
+}
+@keyframes LogoAnimation {
+  0% {top: 60px;}
+  100% {top: 0px;}
+}
+@keyframes MySkillsH1 {
+  from {left: -100px;}
+  to {left: 0px;}
 }

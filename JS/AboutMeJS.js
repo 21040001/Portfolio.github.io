@@ -76,7 +76,7 @@
 
 		//dil tanlovi slector va Glob icon tugma birlashtirilishi
 		function dilSelector() {
-			document.getElementById("dilList").style.display = "flex";
+			document.getElementById("dilList").style.display = "grid";
 		}
 		
 		function fonIshla(x) {
@@ -86,6 +86,22 @@
 			x.classList.remove("icon-img-account-2");
 		}
 
+
+
+		//skills fonksiyonlari
+		function fonk1(x) {
+			x.classList.remove("skills-a-tags1");
+		}
+		function fonk2(x) {
+			x.classList.add("skills-a-tags1");
+		}
+
+		function fonk3(x) {
+			x.classList.remove("btn-dwnld-cv2");
+		}
+		function fonk4(x) {
+			x.classList.add("btn-dwnld-cv2");
+		}
 // Ekran eni 1028pxdan kichik bo'lganda ekrandaki elementlarning joylashishi va o'zgarishi
 	let myVar1028 = setInterval(myTimer1028, 100);
 	function myTimer1028() {
@@ -133,3 +149,15 @@
 		  	
 		}
 	}
+
+
+// Websitemiz Telefon yoki Kompyuter yordamida ochilganiga qarab websitemizni ozgartirish
+let Gadget = setInterval(gadget, 100);
+	function gadget(){
+		var userAgent = window.navigator.userAgent;
+		if (/Mobi|Android/i.test(userAgent)) {
+		    document.body.style.fontSize = "22px";
+		} else {
+    	document.body.style.fontSize = "18px";
+	}
+}
