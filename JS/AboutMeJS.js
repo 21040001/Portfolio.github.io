@@ -157,7 +157,11 @@ let Gadget = setInterval(gadget, 100);
 		var userAgent = window.navigator.userAgent;
 		if (/Mobi|Android/i.test(userAgent)) {
 		    document.body.style.fontSize = "22px";
+		    document.getElementById("kunduzKecha").classList.remove("bx-sm");
+		    document.getElementById("kunduzKecha").classList.add("bx-md");
 		} else {
-    	document.body.style.fontSize = "18px";
+	    	document.body.style.fontSize = "18px";
+	    	document.getElementById("kunduzKecha").classList.remove("bx-md");
+			document.getElementById("kunduzKecha").classList.add("bx-sm");
 	}
 }
