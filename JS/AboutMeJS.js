@@ -159,9 +159,13 @@ let Gadget = setInterval(gadget, 100);
 		    document.body.style.fontSize = "22px";
 		    document.getElementById("kunduzKecha").classList.remove("bx-sm");
 		    document.getElementById("kunduzKecha").classList.add("bx-md");
+		    document.getElementById("glob-icon").classList.remove("bx-sm");
+		    document.getElementById("glob-icon").classList.add("bx-md");
 		} else {
 	    	document.body.style.fontSize = "18px";
 	    	document.getElementById("kunduzKecha").classList.remove("bx-md");
 			document.getElementById("kunduzKecha").classList.add("bx-sm");
+			document.getElementById("glob-icon").classList.remove("bx-md");
+			document.getElementById("glob-icon").classList.add("bx-sm");
 	}
 }
